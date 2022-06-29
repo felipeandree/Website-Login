@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/image-background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.dressup-logo{
+    display: flex;
+    justify-content: flex-start;
+    color: #ffffff;
+    align-items: center;
+    font-family: "Jaldi";
+    font-weight: 400;
+    font-size: 32px;
+}
+
+.dressup-img {
+    max-width: 2.0em;
+    color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+p {
+    font-family: 'Jaldi';
+    font-weight: 400;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+
+#checkbox {
+    display: none;
+}
+
+.checkbox-btn{
+    display: none;
+}
+
+.header{
+    background-color: transparent;
+    backdrop-filter: blur(3rem);
+    border-bottom: 0.01rem solid rgba(255,255,255,0.2);
+    padding: 2rem 3rem;
+    height: 13%;
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 100%;
+    
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 98px;
+    z-index: 1;
+} 
+
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li {
+    justify-content: center; 
+    align-items: center;
+    padding-bottom: 15px;
+}
+nav ul li a {
+    display: flex;
+    padding: 35px;
+    justify-content: flex-end;
+}
+
+#header-nav-item {   
+    background-color: rgba(0, 0, 0, 0.25);  
+    padding-bottom:  1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    font-family: "Inter";
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+#username {
+    position: absolute;
+    width: 886px;
+    height: 115px;
+    top: 395px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 90px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/username.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-origin: content-box;
+    padding-left: 20px;
+
+}
+
+#password {
+    position: absolute;
+    width: 886px;
+    height: 115px;
+    top: 545px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 90px;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(../assets/password.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-origin: content-box;
+    padding-left: 10px;
+} 
+
+ .btn-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 43px 359px;
+    gap: 10px;
+    position: absolute;
+    width: 886px;
+    height: 115px;
+    top: 695px;
+    background: #AE796D;
+    border-radius: 90px;
+    font-size: 24px;
+    font-weight: 70;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+} 
+
+/* Colocando a imagem dentro do input */
+
+ input::-webkit-input-placeholder {
+    font-size: 36px;
+    color: #ffffff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+} 
+
+ input[type="text"] {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+input[type=password] {
+    text-align: center;
+    font-size: 36px;
+    color: #ffffff;
+}
+
+
+/* FOOTER */ 
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 39px;
+    padding-bottom: 0;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 104px;
+    padding-right: 127px;
+    justify-content: space-between;
+} 
+
+.footer-info {
+    font-family: 'Inter';
+    font-size: 1.2rem;
+    font-size: 24px;
+    font-weight: 500px;
+    line-height: 29px; 
+    text-decoration: none;
+    
+}
+
+.footer-copy {
+    font-family: 'Inter';
+    font-size: 24px;
+    font-weight: 500px;
+    line-height: 29px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+
+
+
+/* @MEDIA */ 
+
+
+
+/* @media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+    }
+
+    ul {
+       position: fixed;
+       width: 100%;
+       height: 100vh;
+       top: 80px;
+       left: 0;
+       text-align: center;
+       translate: all .5s;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    nav ul li a {
+        font-size: 20px;
+
+    }
+    a:active, a:hover {
+        background: none;
+        color: #ffffff;
+    }
+} */
